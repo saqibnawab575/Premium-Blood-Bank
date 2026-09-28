@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Blood Drop 3D Gradient -->
+    <linearGradient id="bloodDropGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#ff3b56" />
+      <stop offset="35%" stop-color="#dd1234" />
+      <stop offset="75%" stop-color="#ab0822" />
+      <stop offset="100%" stop-color="#730514" />
+    </linearGradient>
+
+    <!-- Gloss Specular Highlight -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Red Arc Swoosh Gradient -->
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4122f" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#c4122f" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g id="Emblem" transform="translate(30, 20)">
+    <!-- Red Sweeping Crescent Arc -->
+    <path d="M 120 220 C 100 280, 140 370, 270 380 C 370 388, 430 320, 440 270 C 435 295, 385 360, 280 355 C 175 350, 145 280, 160 225 Z" 
+          fill="url(#arcGrad)" />
+
+    <!-- Dark Navy 'P' Form -->
+    <!-- Serif on top left -->
+    <path d="M 160 85 L 220 85 L 220 100 L 195 100 L 195 330 L 225 330 L 225 345 L 160 345 L 160 330 L 190 330 L 190 100 L 160 100 Z" 
+          fill="#0c2e59" />
+
+    <!-- 'P' Main Stem and Upper Arch Loop -->
+    <path d="M 190 85 L 320 85 C 385 85, 415 125, 415 185 C 415 245, 375 285, 305 285 L 190 285 Z
+             M 240 120 L 240 250 L 305 250 C 345 250, 368 225, 368 185 C 368 145, 345 120, 305 120 Z" 
+          fill="#0c2e59" />
+
+    <!-- Crimson Medical Cross (+) on Upper-Right of 'P' -->
+    <g transform="translate(390, 160)" filter="url(#subtleGlow)">
+      <rect x="25" y="0" width="22" height="70" rx="3" fill="#c4122f" />
+      <rect x="0" y="24" width="72" height="22" rx="3" fill="#c4122f" />
+    </g>
+
+    <!-- Glossy 3D Crimson Red Blood Drop Inside the P Bowl -->
+    <g id="BloodDrop" transform="translate(305, 185)">
+      <!-- Teardrop Body -->
+      <path d="M 0 -72 C 10 -50, 48 -5, 48 30 C 48 60, 26 82, 0 82 C -26 82, -48 60, -48 30 C -48 -5, -10 -50, 0 -72 Z" 
+            fill="url(#bloodDropGrad)" filter="url(#subtleGlow)" />
+      
+      <!-- Glossy Specular Reflection -->
+      <path d="M -8 -45 C -25 -15, -34 10, -32 38 C -30 20, -22 -15, -5 -38 C -3 -42, -6 -44, -8 -45 Z" 
+            fill="url(#glossGrad)" />
+      <ellipse cx="-16" cy="38" rx="7" ry="12" transform="rotate(-15 -16 38)" fill="url(#glossGrad)" opacity="0.6" />
+    </g>
+
+    <!-- Navy Hand Cradling the Base of P and Drop -->
+    <g id="CradlingHand" transform="translate(210, 275)">
+      <path d="M 0 35 C 20 65, 75 75, 120 65 C 160 55, 185 25, 195 5 C 170 18, 140 22, 105 15 C 80 10, 60 -5, 35 -10 C 15 -15, 0 5, 0 35 Z" 
+            fill="#0c2e59" />
+      <!-- Finger Details -->
+      <path d="M 125 35 C 155 30, 180 12, 190 -2 C 182 15, 155 35, 120 40 Z" fill="#ffffff" opacity="0.3" />
+      <path d="M 140 45 C 165 42, 185 28, 192 15 C 185 28, 160 48, 130 50 Z" fill="#ffffff" opacity="0.2" />
+    </g>
+  </g>
+
+  <!-- Typography: PREMIUM -->
+  <text x="300" y="445" 
+        font-family="'Plus Jakarta Sans', 'Outfit', 'Cinzel', serif" 
+        font-size="62" 
+        font-weight="800" 
+        letter-spacing="4" 
+        fill="#0c2e59" 
+        text-anchor="middle">PREMIUM</text>
+
+  <!-- Red Lines and BLOOD BANK -->
+  <line x1="45" y1="482" x2="160" y2="482" stroke="#c4122f" stroke-width="4.5" stroke-linecap="round" />
+  
+  <text x="300" y="493" 
+        font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" 
+        font-size="38" 
+        font-weight="800" 
+        letter-spacing="5" 
+        fill="#c4122f" 
+        text-anchor="middle">BLOOD BANK</text>
+        
+  <line x1="440" y1="482" x2="555" y2="482" stroke="#c4122f" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Subtext: SAFE BLOOD • HEALTHIER TOMORROW -->
+  <g transform="translate(300, 535)">
+    <text x="-35" y="0" 
+          font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" 
+          font-size="18" 
+          font-weight="700" 
+          letter-spacing="4" 
+          fill="#0c2e59" 
+          text-anchor="end">SAFE BLOOD</text>
+    
+    <!-- Mini Blood Drop separator -->
+    <path d="M 0 -8 C 2 -5, 6 0, 6 5 C 6 8.5, 3.3 11, 0 11 C -3.3 11, -6 8.5, -6 5 C -6 0, -2 -5, 0 -8 Z" 
+          fill="#c4122f" />
+          
+    <text x="35" y="0" 
+          font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" 
+          font-size="18" 
+          font-weight="700" 
+          letter-spacing="4" 
+          fill="#0c2e59" 
+          text-anchor="start">HEALTHIER TOMORROW</text>
+  </g>
+</svg>

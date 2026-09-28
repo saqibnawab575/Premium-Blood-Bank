@@ -1,0 +1,6 @@
+{
+  "name": "Premium Blood Bank",
+  "description": "Official portal for Premium Blood Bank in Rawalpindi. Committed to safe, reliable blood donation, crossmatching, screening, and 24/7 emergency blood services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
